@@ -8,15 +8,15 @@ array_final = []
 
 e_alphabet.split("").each_with_index do |letter, idx |
     hash_alphabet[letter] = {
-      : idx => []
+      :idx => []
     }
   end
 
 arr.each do |word |
     first_letter = ""
   first_letter = word[0]
-hash_alphabet[first_letter][: idx] = hash_alphabet[first_letter][: idx].push(word)
-hash_alphabet[first_letter][: idx] = hash_alphabet[first_letter][: idx].sort
+hash_alphabet[first_letter][:idx] = hash_alphabet[first_letter][:idx].push(word)
+hash_alphabet[first_letter][:idx] = hash_alphabet[first_letter][:idx].sort
 end
 
 hash_alphabet.each do |k, data |
